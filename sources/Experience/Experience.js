@@ -35,6 +35,7 @@ export default class Experience
 
         this.time = new Time()
         this.sizes = new Sizes()
+
         this.setConfig()
         this.setDebug()
         this.setStats()

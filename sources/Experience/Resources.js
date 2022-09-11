@@ -1,4 +1,6 @@
 import * as THREE from 'three'
+import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js'
+import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js'
 import EventEmitter from './Utils/EventEmitter.js'
 import Loader from './Utils/Loader.js'
 
@@ -33,7 +35,7 @@ export default class Resources extends EventEmitter
                     data = new THREE.Texture(_data)
                 }
                 data.needsUpdate = true
-            }
+            } 
 
             this.items[_resource.name] = data
 

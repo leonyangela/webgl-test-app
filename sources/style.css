@@ -1,19 +1,31 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
-body
-{
-    overflow: hidden;
+body {
+  overflow: hidden;
 }
 
-.experience
-{
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
+.experience {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbar {
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: end;
+  background-color: gray;
+}
+
+.navbar .nav {
+  color: pink;
+  text-decoration: none;
+  border: 2px solid beige;
+  padding: 10px;
 }
