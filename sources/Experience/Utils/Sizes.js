@@ -23,6 +23,11 @@ export default class Sizes extends EventEmitter
         this.resize = this.resize.bind(this)
         window.addEventListener('resize', this.resize)
 
+        this.camera = {}
+        this.camera.posX = 0
+        this.camera.posY = 0
+        this.camera.posZ = 14
+
         this.resize()
     }
 
